@@ -1,0 +1,652 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+
+.row {
+	width: 83%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.row-normal {
+	width: 1300px;
+	margin: 0 auto;
+	position: relative;
+}
+
+section{
+	padding: 70px 0;
+}
+
+body,html {
+	width: 100%;
+	height: 100vh;
+	background: white;
+	color: white;
+	font-size: 17px;
+	font-family: corbel;
+	overflow-x: hidden;
+}
+
+/*-------------------Header-----------------*/
+header{
+	height: 100vh;
+	background-image: linear-gradient(to top, rgba(17,25,25,.8), rgba(32,47,47,1)), url('../images/Daft600.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+/*--------------------Nav------------------*/
+nav {
+	display: flex;
+	height: 60px;
+}
+
+/*------------------left nav---------------*/
+nav .left-nav {
+	flex-basis: 70%;
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	display: flex;
+	align-content: center;
+
+}
+nav .left-nav .inner  {
+	flex-basis: 2%;
+	padding: 0 2em 0 5.5em;
+	display: flex;
+	align-items: center;
+}
+nav .left-nav .inner img  {
+	width: 130px;
+}
+
+nav .left-nav ul {
+	list-style: none;
+    display: flex;
+	align-items: center;
+	border: 0px solid;
+	width: 100%;
+}
+
+nav .left-nav ul li {
+	display: inline;
+	margin-right: 2em;
+    	
+}
+
+/*----------------Right nav------------*/
+nav .right-nav {
+	flex-basis: 30%;
+	background: white;
+	color: black;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+ 
+
+nav .right-nav i{
+	font-size: 120%;
+	margin-right: 2em;
+}
+
+nav .right-nav .barr{
+	background:  #05ffff;
+	padding: 1em;
+}
+
+.right-navibar{
+	padding-right: 5.6em;
+}
+
+/*--------------Content--------------*/
+
+.content {
+	display: flex;
+	height: 91.5%;
+}
+
+/*-----------Left Content------------*/
+.content .content-left {
+	flex-basis: 70%;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	position: relative;
+}
+.content .content-left .hero {
+	flex-basis: 70%;
+	top: 26%;
+	left: 9%;
+	width: 75%;
+    animation: zzzzz ease-in-out .3s;
+    transition: all .3s;
+}
+@keyframes zzzzz {
+	0%{
+		left: -20%;
+	}
+	20%{
+		left: -9%;
+	}
+}
+
+.content .content-left .hero button {
+	padding: 1em;
+	font-weight: bold;
+	border: 0; 
+	text-transform: uppercase;
+	width: 140px;
+	margin-top: 3em;
+	background: #ef8746;
+	color: white;
+}
+
+/*--------Left Content Social Medias--------*/
+.social-media{
+	position: absolute;
+	bottom: 0;
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+.social-media-list{
+	list-style: none;
+    padding: 1em;
+    background: rgba(255,255,255,0.1);
+}
+.social-media-list li{
+	display: inline;
+	margin-left: 1.5em;	
+}
+
+.social-media-list li i{
+	font-size: 120%;	
+}
+/*---------------Right Content-------------*/
+.content .content-right {
+	flex-basis: 30%;
+	background: white;
+	height: 100.2%;
+	position: relative;
+}
+
+.content .content-right:before {
+	content: "Daft Punk Oficial Website";
+    font-size: 100%;
+    position: absolute;
+    right: 3em;
+    z-index: 1;
+    top: 10em;
+    transform: rotate(90deg);
+    color: black;
+    opacity: .7;
+}
+
+.content .content-right img{
+	position: absolute;
+	top:-3%;
+	right:20%;
+	height: 100%;
+	animation: zzz .6s ease-in-out;
+	transition: top 2s;
+	z-index: 2;
+}
+
+@keyframes zzz {
+	0% {
+		  top: -8%;
+		  opacity: .2;
+          right: -10%;
+          transform: rotateY(200deg);
+	}
+	100%{
+          opacity: 1;
+	}
+}
+
+/*-----------Headings and Paragraphy---------*/
+h1 {
+	text-transform: uppercase;
+	color: #05ffff;
+	font-weight: bold;
+	font-size: 490%;
+	margin-bottom: .2em;
+	word-spacing: 10px;
+}
+
+
+
+.hero-features p {
+	width: 70%;
+	opacity: .7;
+}
+h2 {
+	text-transform: uppercase;
+   
+	font-weight: bold;
+	font-size: 290%;
+	margin-bottom: .8em;
+	word-spacing: 10px;
+	
+}
+
+p {
+	width: 50%;
+	opacity: .7;
+}
+
+/*-----------------features-----------------*/
+.features {
+	color: black;
+	position: relative;
+	transition: all .3s; 
+	background: ;
+}
+
+.features-img{
+	position: absolute;
+	left: -25%;
+	bottom: -10%;
+}
+.features:before {
+	content: "PUNK";
+	color: black;
+	position: absolute;
+	font-size: 500%;
+	transform: rotate(90deg);
+	top: 7em;
+	right: 0;
+	opacity: .2;
+	font-weight: bold;
+}
+
+.hero-features {
+	width: 905px;
+	top: 3em;
+	right: 0;
+	position: absolute;
+	z-index: 2;
+}
+
+.features-conntainer{
+	display: flex;
+	background: #e6fbfb;
+	border:10px solid #05ffff ;
+	width: 680px;
+	height: 250px;
+	padding: 1em;
+	z-index: 2;
+	margin-top: 9em;
+}
+
+.features-flex-container{
+	display: flex;
+	justify-content: flex-end;
+	height: 100vh;
+	padding-right: 10em;
+	align-items: center;
+}
+
+.features-conntainer div{
+	display: flex;
+	border-bottom: 5px solid #ef8746;
+	width: 100%;
+	padding: 1em;
+	flex-wrap: wrap;
+	margin: .5em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.features-conntainer div span {
+	font-size: 290%;
+	color: #ef8746;
+	font-weight: bold;
+	margin-bottom: .2em;
+}
+.features-conntainer div h4 {
+	opacity: .7;
+}
+
+.features-conntainer div button {
+	margin-top: 1em;
+	border: 0;
+	padding: 1em;
+	font-weight: bold;
+	background: #ef8746;
+	color: white;
+	text-transform: uppercase;
+	width: 150px;
+}
+
+/*------------------Line--------------------*/
+.line {
+	background: #05ffff;
+	width: 1em;
+	height: 1365px;
+	position:absolute;
+	top: -287px;
+	right: 26%;
+    padding-top: 52em;
+    z-index: 1;
+   
+}
+.line span {
+	position: absolute;
+	left: -1.3em;
+	font-size: 350%;
+	font-weight: bold;
+	opacity: .1;
+
+
+}
+
+
+/*-----------------EVENTS--------------*/
+.events {
+	color: white;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.events p{
+	width: 70%;
+}
+.events .content-left{
+	background-image: linear-gradient(to right, rgba(17,25,25,.7), rgba(32,47,47,1)), url('../images/daft-punk-world-tour-2017-website.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+.events .content-right {
+	display: flex;
+	align-items: center;
+	border: 0px solid;
+	position: relative;
+    
+}
+
+.events .content-right span{
+	padding: 1em;
+	background: #05ffff;
+	color: black;
+	position: absolute;
+	bottom: 8.3em;
+	width: 273px;
+
+}
+
+.events .content-right span i{
+	margin-right: .5em;
+	font-size: 100%;
+
+}
+
+.events .content-right:before {
+	content: "";
+}
+iframe {
+	margin-left: -16em;
+	border: 10px solid #05ffff;
+	z-index: 2;
+}
+
+.events .content-left form{
+	margin-top: 1em;
+	display: flex;
+	flex-direction: column;
+	width: 70%;
+}
+
+.events .content-left form .label-div{
+	position: relative;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+}
+
+.events .content-left form .label-div:before{
+	position: absolute;
+    content: "";
+    height: 2px;
+    width: 25%;
+    bottom: 11px;
+    left: 0px;
+    background:  #05ffff;
+    opacity: .5;
+    top: .6em;
+}
+
+.events .content-left form .label-div:after{
+	position: absolute;
+    content: "";
+    height: 2px;
+    width: 25%;
+    bottom: 11px;
+    right: 0px;
+    background:  #05ffff;
+    opacity: .5;
+    top: .6em;
+}
+
+.events .content-left form .campo{
+	margin-top: 1.5em;
+}
+
+.events .content-left form .campo input{
+	padding: 1em;
+	border: 0;
+	width: 70%;
+	margin-right: .6em;
+}
+
+.events .content-left form .campo button{
+	padding: 1em;
+	border: 0;
+	width: 23.5%;
+	background: #ef8746;
+	color: white;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+/*-----------------Albuns----------------*/
+.albuns{
+	color: #000;
+	height: 100vh;
+    padding: 120px 0 0px 0;
+    background: rgb(240,253,253);
+}
+
+.albuns-container{
+	width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.albuns-container .albuns-box{
+	height: 270px;
+	width: 18%;
+	margin-right: 1em;
+	z-index: 2;
+	box-shadow: 2px 2px 20px rgba(0,0,0,.5),
+	-4px -4px 10px rgba(255,255,255,1);
+}
+
+.albuns-container .albuns-box img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+.albuns-container .albuns-box .body{
+	margin-top: 1em;
+	text-align: center;
+}
+
+.albuns-container .albuns-box .body span{
+	font-weight: bold;
+}
+
+.albuns-container .albuns-box .body p{
+	width: 100%;
+	opacity: .7;
+}
+
+.albuns-container .albuns-box .body button{
+	color: white;
+	padding: 1em;
+	border: 0;
+	background: #ef8746;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 1em;
+	width: 100%;
+}
+
+/*-----------------FOOTER----------------*/
+
+footer { 
+
+	background-image: linear-gradient(to right, #001515, #002020);
+	border-top:  5px solid #05ffff;
+	z-index: 3;
+	padding: 40px 0;
+	position: relative;
+}
+
+.footer-flex{
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	margin-bottom: 2em;
+
+}
+
+.footer-subscribe {
+	flex-basis: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.footer-subscribe form .label-div{
+    margin-bottom: 1em;
+}
+
+.footer-subscribe form .campo input{
+	padding: 1em;
+	border: 0;
+	width: 270px;
+	margin-right: .6em;
+	background: #101010;
+	color: white;
+	border: 1px solid #05ffff;
+}
+
+.footer-subscribe form .campo button{
+	padding: 1em;
+	border: 0;
+	width: 120px;
+	background: #ef8746;
+	color: white;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+.footer-logo {
+	
+	flex-basis: 40%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+}
+.footer-logo img {
+	width: 200px;
+	margin-left: -.5em;
+}
+.footer-logo span{
+	opacity: .7;
+}
+.footer-page-map{
+	flex-basis: 46.3%;
+	display: grid; 
+	justify-content: end;
+	grid-template-columns: repeat(2,auto);
+}
+.footer-page-map ul {
+	list-style: none;
+	margin-left: 4em;
+}
+
+.footer-page-map ul li{
+	text-transform: uppercase;
+    margin-bottom: .5em;
+    opacity: .7;
+}
+
+footer  h5{
+	margin-bottom: 1em;
+	font-size: 100%;
+	color: #05ffff;
+}
+
+footer  p{
+	width: 100%;
+}
+
+.footer-about-us {
+	flex-basis: 40%;
+}
+.footer-about-us .social-media{
+	position: relative;
+	margin-top: .8em;
+	bottom: 0;
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	font-size: 130%;
+}
+.footer-about-us .social-media ul {
+	background: none;
+}
+.footer-about-us .social-media ul li{
+    text-align: left;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 2em;
+	justify-content: flex-start;
+	
+
+}
+
+/*-------------------Scroll bar---------------------*/
+
+::-webkit-scrollbar {
+    width: 14px;
+    margin-left: 1em;
+}
+::-webkit-scrollbar-thumb {
+    height: 20px;
+    border-radius: 10px;
+    background: rgba(17,25,25,.7);
+    box-shadow: inset 0 0px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    background: rgba(55,255,255, 0.2);
+    box-shadow: inset 0 0px rgba(0,0,0,0.3);
+}
+
+
